@@ -1,15 +1,10 @@
 public class NEWPro {
     public static void main(String[] args){
 
-        CalculateScore();
+        CalculateScore(true,10000,8,200);
 
     }
-    public static void CalculateScore(){
-        boolean gameOver = true;
-        int Score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
-
+    public static void CalculateScore(boolean gameOver,int Score,int levelCompleted,int bonus){
         if(gameOver){
             int finalScore = Score+(levelCompleted*bonus);
             finalScore+=1000;
